@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BitcoinTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hs0-T4-4Cm">
+                                <rect key="frame" x="0.0" y="89" width="414" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4Xt-fY-w5j">
+                                        <rect key="frame" x="0.0" y="0.5" width="176" height="149"/>
+                                        <color key="tintColor" red="0.43137254901960786" green="0.71372549019607845" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="176" id="OBj-5n-4Rg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dc-9r-kGN">
+                                        <rect key="frame" x="186" y="0.0" width="130" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="wmn-mq-QLM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ch-Y8-qaa">
+                                        <rect key="frame" x="326" y="0.0" width="88" height="150"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4Dc-9r-kGN" firstAttribute="top" secondItem="hs0-T4-4Cm" secondAttribute="top" id="BOp-Y2-yCX"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Xt-fY-w5j" secondAttribute="bottom" id="H2I-SV-DeX"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Ch-Y8-qaa" secondAttribute="bottom" id="TG2-28-qkK"/>
+                                    <constraint firstAttribute="bottom" secondItem="4Dc-9r-kGN" secondAttribute="bottom" id="WCg-Yf-JC0"/>
+                                    <constraint firstItem="4Xt-fY-w5j" firstAttribute="top" secondItem="hs0-T4-4Cm" secondAttribute="top" id="fdc-y9-Iav"/>
+                                    <constraint firstAttribute="height" constant="150" id="tn3-cy-T2b"/>
+                                    <constraint firstItem="5Ch-Y8-qaa" firstAttribute="top" secondItem="hs0-T4-4Cm" secondAttribute="top" id="uUr-Fk-6cS"/>
+                                </constraints>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3ZY-EQ-qe3">
+                                <rect key="frame" x="47" y="340" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A17-uM-Ujw">
+                                <rect key="frame" x="207" y="837" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.91764705879999997" green="0.3294117647" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.69803921568627447" green="0.87058823529411766" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hs0-T4-4Cm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JhZ-W3-pIS"/>
+                            <constraint firstItem="hs0-T4-4Cm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="SET-VA-tFR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hs0-T4-4Cm" secondAttribute="trailing" id="bXU-Wb-HtV"/>
+                            <constraint firstItem="A17-uM-Ujw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fnb-Sn-Feg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="A17-uM-Ujw" secondAttribute="bottom" constant="25" id="h6Q-GU-53H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryPicker" destination="3ZY-EQ-qe3" id="jpW-Xb-hVA"/>
+                        <outlet property="currencyLabel" destination="5Ch-Y8-qaa" id="taC-U7-m6Z"/>
+                        <outlet property="priceLabel" destination="4Dc-9r-kGN" id="h56-3a-NGz"/>
+                        <outlet property="timeLabel" destination="A17-uM-Ujw" id="Dma-nv-idd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bitcoinsign.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>
